@@ -1,12 +1,30 @@
-# Site settings
 title: AulaTaller
-email: alvarmaciel@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Blog para usar en las aulas.
-baseurl: "/aula-taller" # the subpath of your site, e.g. /blog/
-url: "http://alvarmaciel.github.io" # the base hostname & protocol for your site
-twitter_username: amaciel
-github_username:  alvarmaciel
+description: Blog para usar en el aula
 
-# Build settings
-markdown: kramdown
+url: "https://alvarmaciel.github.io"
+baseurl: "/aula-taller"
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: redcarpet
+highlighter: pygments
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
+social:
+   github: alvarmaciel
+   twitter: amaciel
+   facebook: 
+   email: alvarmaciel@gmail.com
+
+highlighter: pygments
+github: [Repository metadata]
+
+#google_analytics: "UA-58263416-1"
